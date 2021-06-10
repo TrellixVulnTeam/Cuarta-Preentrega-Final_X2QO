@@ -1,0 +1,212 @@
+.grilla {
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "categorias categorias categorias"
+    "footer footer footer";
+    grid-template-columns: 200px 300px;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+  }
+ 
+  #menu{
+     grid-area: nav;
+  }
+ 
+  #titulo{
+     grid-area: titulo;
+  }
+ 
+  #categorias{
+     grid-area: categorias;
+  }
+  
+  
+  #footer{
+     grid-area: footer;
+  }
+ 
+ .borderUno {
+    border: 0px solid black;
+ 
+ }
+
+ @media only screen and (max-width: 800px){
+     .grilla{
+      display: grid;
+      grid-template-areas: 
+      "nav"
+      "titulo"
+      "categorias"
+      "footer" ;
+      grid-template-columns: auto ;
+      grid-template-rows: auto auto auto auto auto;
+      row-gap: 20px;
+     }
+}
+ 
+ .grillaDos{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "cateogiras categorias productos"
+    "footer footer footer";
+    grid-template-columns: 50px 300px ;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 10px;
+ }
+ 
+ #menuDos{
+    grid-area: nav;
+ }
+ 
+ #categoriaDos{
+    grid-area: categorias;
+ }
+ 
+ #productosDos{
+    grid-area: productos;
+ }
+ 
+ #footerDos{
+    grid-area: footer;
+ }
+ 
+ @media only screen and (max-width: 800px){
+     .grillaDos{
+      display: grid;
+      grid-template-areas: 
+    "nav"
+    "categorias" 
+    "productos"
+    "footer" ;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+   }
+ 
+ }
+ 
+ .grillaTres{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "carousel carousel carousel"
+    "productos productos productos"
+    "footer footer footer";
+    grid-template-columns: 200px 300px auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 20px;
+ }
+ 
+ #menuTres{
+    grid-area: nav;
+ }
+ 
+ #carousel{
+    grid-area: carousel;
+ }
+ 
+ 
+ #productosTres{
+    grid-area: productos;
+ }
+ 
+ #footerTres{
+    grid-area: footer;
+ }
+ 
+ @media only screen and (max-width: 800px){
+     .grillaTres{
+         display: grid;
+         grid-template-areas: 
+       "nav"
+       "carousel"
+       "productos"
+       "footer" ;
+       grid-template-columns: auto ;
+       grid-template-rows: auto auto auto auto;
+       row-gap: 20px;
+     }
+ 
+ }
+ 
+ .grillaCuatro{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "titulo titulo titulo "
+    "formulario formulario relleno"
+    "footer footer footer";
+    grid-template-columns: 200px;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 20px;
+ }
+ #menuCuatro{
+    grid-area: nav;
+ }
+ 
+ #tituloCuatro{
+    grid-area: titulo;
+ }
+ 
+ #formulario{
+    grid-area: formulario;
+ }
+ 
+ #footerCuatro{
+    grid-area: footer;
+ }
+ 
+ @media only screen and (max-width: 800px){
+     .grillaCuatro{
+         display: grid;
+         grid-template-areas: 
+       "nav"
+       "titulo"
+       "formulario"
+       "footer" ;
+       grid-template-columns: auto ;
+       grid-template-rows: auto auto auto auto;
+       row-gap: 20px;
+     }
+ 
+ }
+ 
+ .grillaCinco{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "presentacion presentacion presentacion"
+    "footer footer footer";
+    grid-template-columns: 200px 300px auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 20px;
+ }
+ 
+ #menuCinco{
+    grid-area: nav;
+ }
+ 
+ #presentacion{
+    grid-area: presentacion;
+ }
+ 
+ #footerCinco{
+    grid-area: footer;
+ }
+ 
+ @media only screen and (max-width: 800px){
+     .grillaCinco{
+         display: grid;
+         grid-template-areas: 
+       "nav"
+       "presentacion"
+       "footer";
+       grid-template-columns: auto ;
+       grid-template-rows: auto auto auto auto;
+       row-gap: 20px;
+     }
+ 
+ }
+

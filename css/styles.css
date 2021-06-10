@@ -1,0 +1,294 @@
+.grilla {
+  display: grid;
+  grid-template-areas: "nav nav nav" "categorias categorias categorias" "footer footer footer";
+  grid-template-columns: 200px 300px;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 20px; }
+
+#menu {
+  grid-area: nav; }
+
+#titulo {
+  grid-area: titulo; }
+
+#categorias {
+  grid-area: categorias; }
+
+#footer {
+  grid-area: footer; }
+
+.borderUno {
+  border: 0px solid black; }
+
+@media only screen and (max-width: 800px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "nav" "titulo" "categorias" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 20px; } }
+
+.grillaDos {
+  display: grid;
+  grid-template-areas: "nav nav nav" "cateogiras categorias productos" "footer footer footer";
+  grid-template-columns: 50px 300px;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 10px; }
+
+#menuDos {
+  grid-area: nav; }
+
+#categoriaDos {
+  grid-area: categorias; }
+
+#productosDos {
+  grid-area: productos; }
+
+#footerDos {
+  grid-area: footer; }
+
+@media only screen and (max-width: 800px) {
+  .grillaDos {
+    display: grid;
+    grid-template-areas: "nav" "categorias"  "productos" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px; } }
+
+.grillaTres {
+  display: grid;
+  grid-template-areas: "nav nav nav" "carousel carousel carousel" "productos productos productos" "footer footer footer";
+  grid-template-columns: 200px 300px auto;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px; }
+
+#menuTres {
+  grid-area: nav; }
+
+#carousel {
+  grid-area: carousel; }
+
+#productosTres {
+  grid-area: productos; }
+
+#footerTres {
+  grid-area: footer; }
+
+@media only screen and (max-width: 800px) {
+  .grillaTres {
+    display: grid;
+    grid-template-areas: "nav" "carousel" "productos" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px; } }
+
+.grillaCuatro {
+  display: grid;
+  grid-template-areas: "nav nav nav" "titulo titulo titulo " "formulario formulario relleno" "footer footer footer";
+  grid-template-columns: 200px;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px; }
+
+#menuCuatro {
+  grid-area: nav; }
+
+#tituloCuatro {
+  grid-area: titulo; }
+
+#formulario {
+  grid-area: formulario; }
+
+#footerCuatro {
+  grid-area: footer; }
+
+@media only screen and (max-width: 800px) {
+  .grillaCuatro {
+    display: grid;
+    grid-template-areas: "nav" "titulo" "formulario" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px; } }
+
+.grillaCinco {
+  display: grid;
+  grid-template-areas: "nav nav nav" "presentacion presentacion presentacion" "footer footer footer";
+  grid-template-columns: 200px 300px auto;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px; }
+
+#menuCinco {
+  grid-area: nav; }
+
+#presentacion {
+  grid-area: presentacion; }
+
+#footerCinco {
+  grid-area: footer; }
+
+@media only screen and (max-width: 800px) {
+  .grillaCinco {
+    display: grid;
+    grid-template-areas: "nav" "presentacion" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px; } }
+
+.anchoImg {
+  width: 300px;
+  display: block; }
+
+.altoImg {
+  max-height: 100%; }
+
+.paraFont {
+  font-size: 30px; }
+
+h1 {
+  color: black; }
+
+.centrarTitulo {
+  margin-left: 37%; }
+
+.centrarTituloContacto {
+  margin-left: 26%; }
+
+.centrarTituloProductos {
+  margin-left: 13%; }
+
+td {
+  font-style: italic; }
+
+.discoParaLista {
+  list-style-type: disc; }
+
+.fondo {
+  background-color: rgba(158, 160, 157, 0.596); }
+
+body {
+  background-image: url(../img/madera4.jpg); }
+
+nav ul li a {
+  text-decoration: none;
+  color: black; }
+
+.cuadroIndex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 200px; }
+
+.cuadroIndex__img {
+  margin: 5px;
+  padding: 5px; }
+
+.cuadroProducto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 200px; }
+
+.cuadroProducto__img {
+  margin: 2px; }
+
+.tituloProductos {
+  background-color: rgba(245, 189, 115, 0.562);
+  margin-top: 30px; }
+
+.tituloProductos__font {
+  font-style: italic;
+  color: black; }
+
+.tituloContactos {
+  background-color: rgba(245, 189, 115, 0.562);
+  margin-top: 30px; }
+
+.tituloContactos__font {
+  font-style: italic;
+  color: black; }
+
+.containerContactos {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(158, 160, 157, 0.596);
+  margin-left: 500px; }
+
+.containerContactos div {
+  margin: 0.3rem; }
+
+.cuadroFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-style: italic;
+  font-weight: bold;
+  padding: 20px; }
+
+.cuadroFooter__listas {
+  padding: 30px; }
+
+footer {
+  background: rgba(148, 223, 233, 0.466);
+  background: radial-gradient(circle, rgba(193, 197, 197, 0.616) 0%, rgba(248, 239, 188, 0.87) 100%);
+  height: auto;
+  font-size: 22px; }
+
+footer a {
+  text-decoration: none;
+  color: black; }
+
+.moverUno {
+  margin-right: 500px; }
+
+.cuadroProducto--borde {
+  border: 0px solid black;
+  background-color: rgba(158, 160, 157, 0.596);
+  height: 1400px;
+  width: 1200px; }
+
+.listas-boton:hover {
+  background-color: #7dcbf844; }
+
+.listas-botones:hover {
+  background-color: #eeeee6; }
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.pie {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(158, 160, 157, 0.596);
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0; }
+
+.galeria img {
+  max-width: 270px; }
+
+.galeriaDos {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; }
+
+.galeriaDos div {
+  margin: 5px;
+  padding: 5px; }
