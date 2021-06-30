@@ -1,15 +1,18 @@
 .grilla {
   display: grid;
-  grid-template-areas: "nav nav nav" "categorias categorias categorias" "footer footer footer";
+  grid-template-areas: "nav nav nav" "carousel carousel carousel" "presentacion presentacion presentacion" "categorias categorias categorias" "footer footer footer";
   grid-template-columns: 200px 300px;
   grid-template-rows: auto auto auto auto;
-  row-gap: 20px; }
+  row-gap: 35px; }
 
 #menu {
   grid-area: nav; }
 
-#titulo {
-  grid-area: titulo; }
+#carousel_index {
+  grid-area: carousel; }
+
+#presentacion_uno {
+  grid-area: presentacion; }
 
 #categorias {
   grid-area: categorias; }
@@ -20,17 +23,25 @@
 .borderUno {
   border: 0px solid black; }
 
+@media only screen and (max-width: 1024px) {
+  .galeria img {
+    width: 250px;
+    height: 250px; }
+  .galeria #logo {
+    height: auto;
+    width: auto; } }
+
 @media only screen and (max-width: 800px) {
   .grilla {
     display: grid;
-    grid-template-areas: "nav" "titulo" "categorias" "footer";
+    grid-template-areas: "nav" "carousel" "presentacion" "categorias" "footer";
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
     row-gap: 20px; } }
 
 .grillaDos {
   display: grid;
-  grid-template-areas: "nav nav nav" "productos productos productos" "footer footer footer";
+  grid-template-areas: "nav nav nav" "categorias categorias categorias" "productos productos productos" "footer footer footer";
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   grid-row-gap: 50px; }
@@ -47,7 +58,7 @@
 #footerDos {
   grid-area: footer; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .grillaDos {
     display: grid;
     grid-template-areas: "nav" "categorias"  "productos" "footer";
@@ -65,7 +76,7 @@
 #menuTres {
   grid-area: nav; }
 
-#carousel {
+#carousel_promocion {
   grid-area: carousel; }
 
 #productosTres {
@@ -121,7 +132,7 @@
 #menuCinco {
   grid-area: nav; }
 
-#presentacion {
+#presentacion_dos {
   grid-area: presentacion; }
 
 #footerCinco {
@@ -145,11 +156,14 @@
 .paraFont {
   font-size: 30px; }
 
-h1 {
-  color: black; }
+.paraFontdos {
+  font-size: 40px; }
 
 .fondo {
   background-color: rgba(158, 160, 157, 0.596); }
+
+.fondo_presentador {
+  background-color: #797979; }
 
 body {
   background-image: url(../img/madera4.jpg); }
@@ -159,8 +173,18 @@ body {
   background-color: #eeeee696;
   border-radius: 3px; }
 
+nav img {
+  height: 120px; }
+
 /* Cierra nav */
 /* Abre index */
+.subir_logo {
+  margin-block-end: 100px; }
+
+#categorias a {
+  text-decoration: none;
+  color: black; }
+
 .galeria {
   width: 90%;
   margin: auto;
@@ -169,18 +193,42 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: center; }
+  .galeria img {
+    width: 350px;
+    height: 370px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.692);
+    padding: 0.3px;
+    margin: 0.3px; }
+  .galeria p {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(158, 160, 157, 0.596);
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0; }
 
-.pie {
-  text-align: center;
-  padding: 1em;
+.containerPresentacion_uno {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(158, 160, 157, 0.596);
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 0 10px 0; }
+  margin-left: 260px;
+  margin-right: 260px;
+  justify-content: center;
+  font-size: 20px; }
 
-.galeria img {
-  max-width: 270px; }
+.titulo_galeria {
+  background-color: #39668da4;
+  margin-left: 260px;
+  margin-right: 260px;
+  border-radius: 10px; }
+
+.titulo_galeriaDos {
+  background-color: #39668da4;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 10px; }
 
 /* Cierra index */
 /* Abre producto */
@@ -189,7 +237,7 @@ body {
 
 .cuadroProducto--borde {
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 0 0 0 15px;
   background-color: rgba(158, 160, 157, 0.596);
   height: auto;
   width: auto;
@@ -204,18 +252,82 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap; }
+  .galeriaDos div {
+    margin: 5px;
+    padding: 5px; }
+    .galeriaDos div img {
+      height: 400px; }
+  .galeriaDos p {
+    background-color: rgba(250, 235, 215, 0.712);
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 0 10px 0; }
 
-.galeriaDos div {
-  margin: 5px;
-  padding: 5px; }
+.galeriaDos_chica {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; }
+  .galeriaDos_chica div {
+    margin: 5px;
+    padding: 5px; }
+  .galeriaDos_chica img {
+    height: 220px; }
+  .galeriaDos_chica p {
+    background-color: rgba(250, 235, 215, 0.712);
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 0 10px 0; }
 
-.galeriaDos_parrafo {
+.float_categorias {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  margin-top: 130px;
+  margin-left: 5px; }
+
+#categoria_productos {
+  margin-left: 170px;
+  margin-right: 170px; }
+
+/*  Cierra  */
+/* Abre promociones */
+#productosDos h2 {
+  font-size: 40px; }
+
+.cuadroPromocion--borde {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba(158, 160, 157, 0.596);
+  height: auto;
+  width: auto;
+  margin-left: 170px;
+  margin-right: 170px; }
+
+.galeriaTres {
+  margin: auto;
+  padding: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; }
+  .galeriaTres div {
+    margin: 5px;
+    padding: 5px; }
+  .galeriaTres img {
+    height: 280px; }
+
+.galeriaTres p {
   background-color: rgba(250, 235, 215, 0.712);
   text-align: center;
   padding: 1em;
   box-shadow: 0 0 10px 0; }
 
-/*  Cierra  */
+/* Cierra */
 /* Abre contacto */
 .containerContactos {
   display: flex;
@@ -236,18 +348,17 @@ body {
   margin-left: 26%; }
 
 /* Cierra contacto */
-.containerPresentacion {
+/* Abre institucional */
+.containerPresentacion_dos {
   display: flex;
   flex-direction: column;
   background-color: rgba(158, 160, 157, 0.596);
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 260px;
+  margin-right: 260px;
   justify-content: center;
   font-size: 20px; }
 
-.containerPresentacion li {
-  list-style: none; }
-
+/* Cierra institucional */
 /* Abre footer*/
 .cuadroFooter {
   display: flex;
@@ -272,15 +383,38 @@ footer a {
 
 .seccionActiva_footer {
   background-color: #ffffff;
-  border-radius: 3px; }
+  border-radius: 20px;
+  transition: .4s; }
 
 /* Cierra footer */
 .listas-boton:hover {
   background-color: #fffffffa;
   transition: .4s;
-  border-radius: 3px; }
+  border-radius: 20px; }
 
 .listas-botones:hover {
   background-color: #eeeee6;
   transition: .4s;
-  border-radius: 3px; }
+  border-radius: 20px; }
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff; }
+
+.my-float {
+  margin-top: 16px; }

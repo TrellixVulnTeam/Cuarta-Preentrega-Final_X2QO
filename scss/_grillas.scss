@@ -2,20 +2,26 @@
     display: grid;
     grid-template-areas:
     "nav nav nav"
+    "carousel carousel carousel"
+    "presentacion presentacion presentacion"
     "categorias categorias categorias"
     "footer footer footer";
     grid-template-columns: 200px 300px;
     grid-template-rows: auto auto auto auto;
-    row-gap: 20px;
+    row-gap: 35px;
   }
  
   #menu{
      grid-area: nav;
   }
  
-  #titulo{
-     grid-area: titulo;
-  }
+ #carousel_index{
+    grid-area: carousel;
+ }
+ 
+ #presentacion_uno{
+    grid-area: presentacion;
+ }
  
   #categorias{
      grid-area: categorias;
@@ -31,12 +37,26 @@
  
  }
 
+ @media only screen and (max-width: 1024px){
+    .galeria{
+      img{
+         width: 250px;
+         height: 250px;
+      }
+      #logo{
+         height: auto;
+         width: auto;
+      }
+    }
+ }
+
  @media only screen and (max-width: 800px){
      .grilla{
       display: grid;
       grid-template-areas: 
       "nav"
-      "titulo"
+      "carousel"
+      "presentacion"
       "categorias"
       "footer" ;
       grid-template-columns: auto ;
@@ -49,6 +69,7 @@
     display: grid;
     grid-template-areas:
     "nav nav nav"
+    "categorias categorias categorias"
     "productos productos productos"
     "footer footer footer";
     grid-template-columns: auto ;
@@ -72,7 +93,7 @@
     grid-area: footer;
  }
  
- @media only screen and (max-width: 800px){
+ @media only screen and (max-width: 1024px){
      .grillaDos{
       display: grid;
       grid-template-areas: 
@@ -84,7 +105,6 @@
     grid-template-rows: auto auto auto auto;
     row-gap: 20px;
    }
- 
  }
  
  .grillaTres{
@@ -103,7 +123,7 @@
     grid-area: nav;
  }
  
- #carousel{
+ #carousel_promocion{
     grid-area: carousel;
  }
  
@@ -191,7 +211,7 @@
     grid-area: nav;
  }
  
- #presentacion{
+ #presentacion_dos{
     grid-area: presentacion;
  }
  
