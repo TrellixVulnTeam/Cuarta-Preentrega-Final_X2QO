@@ -30,6 +30,9 @@ $fondoGris: rgba(158, 160, 157, 0.596);
  
  body{
  background-image: url(../img/madera4.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
 
  }
  /* Abre nav */
@@ -117,8 +120,9 @@ nav img{
   background-color: rgba(158, 160, 157, 0.596);
   height: auto;
   width: auto;
-  margin-left: 170px;
-  margin-right: 170px;
+  margin-left: 120px;
+  margin-right: 120px;
+ 
 }
 .galeriaDos{
   width: 100%;
@@ -191,8 +195,8 @@ nav img{
   background-color: rgba(158, 160, 157, 0.596);
   height: auto;
   width: auto;
-  margin-left: 170px;
-  margin-right: 170px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 .galeriaTres{
   
@@ -241,7 +245,8 @@ nav img{
    margin-top: 30px;
 }
 .centrarTituloContacto{
-  margin-left: 26%;
+  margin-left: 300px;
+  margin-right: 300px;
 }
  /* Cierra contacto */
 

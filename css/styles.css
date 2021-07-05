@@ -41,7 +41,7 @@
 
 .grillaDos {
   display: grid;
-  grid-template-areas: "nav nav nav" "categorias categorias categorias" "productos productos productos" "footer footer footer";
+  grid-template-areas: "nav nav nav" "productos productos productos" "footer footer footer";
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   grid-row-gap: 50px; }
@@ -57,6 +57,48 @@
 
 #footerDos {
   grid-area: footer; }
+
+@media screen and (max-width: 876px) {
+  .grillaDos {
+    display: grid;
+    grid-template-areas: "nav" "categorias"  "productos" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px; }
+  .galeriaDos div {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: auto; }
+  .galeriaDos img {
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    margin-left: 60px; }
+  .galeriaDos p {
+    width: 400px;
+    margin-left: 60px; }
+  .galeriaDos_chica div {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: auto; }
+  .galeriaDos_chica img {
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    margin-left: 60px; }
+  .galeriaDos_chica p {
+    width: 400px;
+    margin-left: 60px; } }
+
+@media only screen and (max-width: 976px) {
+  .grillaDos {
+    display: grid;
+    grid-template-areas: "nav" "categorias"  "productos" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px; } }
 
 @media only screen and (max-width: 1024px) {
   .grillaDos {
@@ -95,6 +137,51 @@
   nav ul li a {
     margin: 0px; } }
 
+@media only screen and (max-width: 940px) {
+  .galeriaTres div {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: auto; }
+  .galeriaTres img {
+    align-items: center;
+    width: 330px;
+    height: 350px;
+    margin-left: 80px; }
+  .galeriaTres p {
+    width: 330px;
+    margin-left: 80px; } }
+
+@media only screen and (width: 1024px) {
+  .galeriaTres div {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: auto; }
+  .galeriaTres img {
+    align-items: center;
+    width: 280px;
+    height: 350px;
+    margin-left: 35px; }
+  .galeriaTres p {
+    width: 280px;
+    margin-left: 35px; } }
+
+@media only screen and (width: 1440px) {
+  .galeriaTres div {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: auto; }
+  .galeriaTres img {
+    align-items: center;
+    width: 280px;
+    height: 350px;
+    margin-left: 65px; }
+  .galeriaTres p {
+    width: 280px;
+    margin-left: 65px; } }
+
 .grillaCuatro {
   display: grid;
   grid-template-areas: "nav nav" "titulo titulo" "formulario formulario" "footer footer";
@@ -120,7 +207,12 @@
     grid-template-areas: "nav" "titulo" "formulario" "footer";
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    row-gap: 20px; } }
+    row-gap: 20px; }
+  .containerContactos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(158, 160, 157, 0.596);
+    justify-content: center; } }
 
 .grillaCinco {
   display: grid;
@@ -166,7 +258,10 @@
   background-color: #797979; }
 
 body {
-  background-image: url(../img/madera4.jpg); }
+  background-image: url(../img/madera4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 /* Abre nav */
 .seccionActiva {
@@ -241,8 +336,8 @@ nav img {
   background-color: rgba(158, 160, 157, 0.596);
   height: auto;
   width: auto;
-  margin-left: 170px;
-  margin-right: 170px; }
+  margin-left: 120px;
+  margin-right: 120px; }
 
 .galeriaDos {
   width: 100%;
@@ -305,8 +400,8 @@ nav img {
   background-color: rgba(158, 160, 157, 0.596);
   height: auto;
   width: auto;
-  margin-left: 170px;
-  margin-right: 170px; }
+  margin-left: 150px;
+  margin-right: 150px; }
 
 .galeriaTres {
   margin: auto;
@@ -345,7 +440,8 @@ nav img {
   margin-top: 30px; }
 
 .centrarTituloContacto {
-  margin-left: 26%; }
+  margin-left: 300px;
+  margin-right: 300px; }
 
 /* Cierra contacto */
 /* Abre institucional */

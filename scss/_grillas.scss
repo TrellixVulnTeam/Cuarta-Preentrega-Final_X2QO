@@ -69,7 +69,6 @@
     display: grid;
     grid-template-areas:
     "nav nav nav"
-    "categorias categorias categorias"
     "productos productos productos"
     "footer footer footer";
     grid-template-columns: auto ;
@@ -92,6 +91,77 @@
  #footerDos{
     grid-area: footer;
  }
+
+ @media  screen and (max-width: 876px) {
+   .grillaDos{
+      display: grid;
+      grid-template-areas: 
+    "nav"
+    "categorias" 
+    "productos"
+    "footer" ;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+   }
+   
+   .galeriaDos{
+      div{
+         align-items: center;
+         width: 100%;
+         margin: auto;
+         padding: auto;
+      }
+      img{
+         align-items: center;
+         
+         width: 400px;
+         height: 350px;      
+         margin-left: 60px;
+      }
+      p{
+         width: 400px;
+         margin-left: 60px;
+      }
+   }
+   
+   .galeriaDos_chica{
+      div{
+         align-items: center;
+         width: 100%;
+         margin: auto;
+         padding: auto;
+      }
+      img{
+         align-items: center;
+         
+         width: 400px;
+         height: 350px;      
+         margin-left: 60px;
+      }
+      p{
+         width: 400px;
+         margin-left: 60px;
+      }
+   }
+      
+}
+
+ @media only screen and (max-width: 976px) {
+   .grillaDos{
+      display: grid;
+      grid-template-areas: 
+    "nav"
+    "categorias" 
+    "productos"
+    "footer" ;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+   }
+
+    
+ }
  
  @media only screen and (max-width: 1024px){
      .grillaDos{
@@ -106,6 +176,8 @@
     row-gap: 20px;
    }
  }
+
+
  
  .grillaTres{
     display: grid;
@@ -151,8 +223,77 @@
      nav ul li a{
         margin: 0px
      }
- 
  }
+
+
+ @media only screen and (max-width: 940px){
+    .galeriaTres{
+      div{
+         align-items: center;
+         width: 100%;
+         margin: auto;
+         padding: auto;
+      }
+      img{
+         align-items: center;
+         
+         width: 330px;
+         height: 350px;      
+         margin-left: 80px;
+      }
+      p{
+         width: 330px;
+         margin-left: 80px;
+      }
+    }
+ }
+
+ @media only screen and (width: 1024px){
+   .galeriaTres{
+     div{
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+     }
+     img{
+        align-items: center;
+        
+        width: 280px;
+        height: 350px;      
+        margin-left: 35px;
+     }
+     p{
+        width: 280px;
+        margin-left: 35px;
+        
+     }
+   }
+}
+
+@media only screen and (width: 1440px){
+   .galeriaTres{
+     div{
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+     }
+     img{
+        align-items: center;
+        
+        width: 280px;
+        height: 350px;      
+        margin-left: 65px;
+     }
+     p{
+        width: 280px;
+        margin-left: 65px;
+        
+     }
+   }
+}
+
  
  .grillaCuatro{
     display: grid;
@@ -193,6 +334,13 @@
        grid-template-rows: auto auto auto auto;
        row-gap: 20px;
      }
+     .containerContactos{
+      display: flex;
+      flex-direction: column;   
+      background-color: rgba(158, 160, 157, 0.596);
+      justify-content: center;
+     }
+     
  
  }
  
